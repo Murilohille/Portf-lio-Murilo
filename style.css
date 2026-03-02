@@ -183,30 +183,6 @@ nav {
   animation: fadeUp 0.6s forwards 0.8s;
 }
 
-.scroll-indicator {
-  position: absolute;
-  bottom: 2rem;
-  left: 4rem;
-  font-family: 'Space Mono', monospace;
-  font-size: 0.65rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--text-dim);
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  opacity: 0;
-  animation: fadeUp 0.6s forwards 1.2s;
-}
-
-.scroll-indicator::after {
-  content: '';
-  display: block;
-  width: 1px;
-  height: 50px;
-  background: linear-gradient(to bottom, var(--text-dim), transparent);
-}
-
 /* ========================
    BOTÕES
 ======================== */
@@ -547,10 +523,6 @@ footer p {
   .about-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
-  }
-
-  .scroll-indicator {
-    left: 1.5rem;
   }
 
   footer {
