@@ -15,15 +15,10 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: 'Syne', sans-serif;
   background: var(--bg);
   color: var(--text);
-  overflow-x: hidden;
 }
 
 /* NOISE OVERLAY */

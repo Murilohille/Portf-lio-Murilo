@@ -46,7 +46,6 @@
         <a href="#contact" class="btn btn-ghost">Entrar em contato</a>
       </div>
     </div>
-    <div class="scroll-indicator">Scroll</div>
   </section>
 
   <!-- SOBRE -->
@@ -170,6 +169,10 @@
       });
     }, { threshold: 0.1 });
     reveals.forEach(el => observer.observe(el));
+    window.onload = function () {
+      window.scrollTo(0, 0);
+    };
+
   </script>
 
 </body>
