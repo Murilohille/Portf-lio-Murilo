@@ -160,6 +160,12 @@
   </footer>
 
   <script>
+    if (history.scrollRestoration) {
+      history.scrollRestoration = 'manual';
+    }
+
+    window.scrollTo(0, 0);
+
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
@@ -169,11 +175,13 @@
       });
     }, { threshold: 0.1 });
     reveals.forEach(el => observer.observe(el));
-    if (history.scrollRestoration) {
-      history.scrollRestoration = 'manual';
-    }
-    window.scrollTo(0, 0);
 
+    window.addEventListener('load', () => {
+      window.scrollTo(0, 0);
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'instant' });
+      }, 0);
+    });
   </script>
 
 </body>
