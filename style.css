@@ -19,6 +19,7 @@ body {
   font-family: 'Syne', sans-serif;
   background: var(--bg);
   color: var(--text);
+  padding-top: 80px;
 }
 
 /* NOISE OVERLAY */
@@ -48,6 +49,7 @@ nav {
   background: rgba(8, 12, 16, 0.85);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
+  height: 80px;
 }
 
 .nav-logo {
@@ -88,6 +90,7 @@ nav {
   padding: 0 4rem;
   position: relative;
   overflow: hidden;
+  padding-top: 120px;
 }
 
 .hero-grid-bg {
@@ -221,6 +224,7 @@ nav {
 section {
   padding: 8rem 4rem;
   position: relative;
+  scroll-margin-top: 100px;
 }
 
 .section-label {
