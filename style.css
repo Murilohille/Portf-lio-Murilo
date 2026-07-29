@@ -320,11 +320,13 @@ section {
 }
 
 .project-card {
+  display: block;
   border: 1px solid var(--border);
   background: var(--surface);
   padding: 2.5rem;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
   transition: border-color 0.3s, transform 0.3s;
   cursor: pointer;
 }
